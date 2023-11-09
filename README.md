@@ -1,12 +1,12 @@
-# Node.js project template
+# Node.js REST API template
 
-This GitHub project template is designed to kickstart your Node.js application development.
-It provides a set of essential files to help you maintain a clean and organized codebase for your Node.js project.
+This GitHub project template is designed to kickstart your Node.js REST API development.
+It provides a set of essential files to help you maintain a clean and organized codebase for your Node.js REST API project.
 
 ## Features
 
 1. **Directory structure:**
-   - `/src`: This directory is where your Node.js application source code should be placed. It's organized into subdirectories, such as `/controllers`, `/dtos`, `/routes`, and `/utils` to keep your code modular and maintainable.
+   - `/src`: This directory is where your Node.js application source code should be placed. It's organized into subdirectories, such as `/controllers`, `/dto`, `/routes`, `/services` and `/utils` to keep your code modular and maintainable.
      - `/config`: Configuration files, environment variables, and any other settings needed for your application.
      - `/test`: This directory is for your unit and integration tests using a testing framework.
 2. **Package.json:**
@@ -22,6 +22,7 @@ It provides a set of essential files to help you maintain a clean and organized 
 [![socket.io](https://img.shields.io/badge/socket.io-25A586?style=for-the-badge&logo=socket.io&logoColor=white)](https://socket.io/)
 [![nodemon.io](https://img.shields.io/badge/nodemon-6EC84D?style=for-the-badge&logo=nodemon&logoColor=464338)](https://nodemon.io/)
 [![typescript](https://img.shields.io/badge/typescript-2C6FBB?style=for-the-badge&logo=typescript&logoColor=FFF)](https://www.typescriptlang.org/)
+[![Prisma](https://img.shields.io/badge/prisma-4F60CE?style=for-the-badge&logo=prisma&logoColor=FFF)](https://www.prisma.io/)
 [![jest](https://img.shields.io/badge/jest-21B92B?style=for-the-badge&logo=jest&logoColor=B91124)](https://jestjs.io/)
 [![eslint](https://img.shields.io/badge/eslint-4133B7?style=for-the-badge&logo=eslint&logoColor=FFF)](https://eslint.org/)
 [![prettier](https://img.shields.io/badge/prettier-F6B249?style=for-the-badge&logo=prettier&logoColor=000)](https://prettier.io/)
@@ -37,9 +38,8 @@ It provides a set of essential files to help you maintain a clean and organized 
 3. Start building your Node.js application in the `/src` directory.
 4. Add your application's configuration in the `/config` directory.
 5. Write tests for your code in the `/test` directory.
-6. Document your project in the `/docs` directory.
-7. Customize the README file with specific information about your project.
-8. Commit and push your changes to your own GitHub repository.
+6. Customize the README file with specific information about your project.
+7. Commit and push your changes to your own GitHub repository.
 
 ## License
 

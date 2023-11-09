@@ -41,7 +41,7 @@
     "supertest"
   ],
   "license": "MIT",
-  "name": "nodejs-rest-api-template",
+  "name": "api-template",
   "scripts": {
     "build": "npm-run-all format lint test clean && tsc",
     "clean": "rimraf ./build",
