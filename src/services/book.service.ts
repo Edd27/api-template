@@ -1,5 +1,5 @@
 import prisma from "../config/db";
-import { BookWithoutId } from "../types";
+import { BookWithoutId } from "../type";
 
 export const bookService = {
   getAll: async () => {
