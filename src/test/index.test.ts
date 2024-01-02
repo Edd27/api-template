@@ -1,6 +1,6 @@
 import supertest from "supertest";
 import { server } from "../config/http";
-import { BookWithoutId } from "../types";
+import { BookWithoutId } from "../type";
 import { Book } from "@prisma/client";
 
 const API_VERSION = process.env.API_VERSION || 1;
