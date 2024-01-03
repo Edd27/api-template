@@ -35,11 +35,27 @@ It provides a set of essential files to help you maintain a clean and organized 
 
 1. Clone this repository to your local development environment.
 2. Install the project dependencies using `npm install`.
-3. Start building your Node.js application in the `/src` directory.
-4. Add your application's configuration in the `/config` directory.
-5. Write tests for your code in the `/test` directory.
-6. Customize the README file with specific information about your project.
-7. Commit and push your changes to your own GitHub repository.
+3. Create a `.env` file from `.env.example`.
+4. Run an instance of postgres with docker with:
+
+   ```bash
+   docker run -d -p 5432:5432 --name my-postgres -e POSTGRES_USER=myuser -e POSTGRES_PASSWORD=mypassword postgres:latest
+   ```
+
+   If you already have a postgres server installed, just modify your `.env` file with the credentials of your postgres instance.
+
+5. Init migration with `npx prisma migrate dev --name init`.
+6. Run server on dev mode:
+
+   ```bash
+   npm run dev
+   ```
+
+7. Start building your Node.js application in the `/src` directory.
+8. Add your application's configuration in the `/config` directory.
+9. Write tests for your code in the `/test` directory.
+10. Customize the README file with specific information about your project.
+11. Commit and push your changes to your own GitHub repository.
 
 ## License
 

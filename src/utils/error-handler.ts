@@ -1,8 +1,5 @@
 import { Request, Response } from "express";
-
-type ErrorDictionary = {
-  [key: string]: (res: Response, err?: Error) => Response;
-};
+import { ErrorDictionary } from "../type";
 
 const ERROR_HANDLER: ErrorDictionary = {
   PrismaClientValidationError: (res: Response) => {
@@ -25,7 +22,7 @@ const ERROR_HANDLER: ErrorDictionary = {
 };
 
 export const errorHandler = (err: Error, _req: Request, res: Response) => {
-  console.error("HANDLING ERROR => ", err);
+  console.error("HANDLING ERROR => ", { err });
 
   const handler = ERROR_HANDLER[err.name] || ERROR_HANDLER.DefaultError;
 

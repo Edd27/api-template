@@ -3,7 +3,7 @@ import cors from "cors";
 import morgan from "morgan";
 import { corsOptions } from "./cors";
 import { bookRoutes } from "../routes";
-import { errorHandler } from "../utils/error-handler";
+// import { errorHandler } from "../utils/error-handler";
 
 const app = express();
 
@@ -15,13 +15,14 @@ app.use(express.urlencoded({ extended: true }));
 const API_VERSION = process.env.API_VERSION ?? 1;
 
 app.get(`/api/v${API_VERSION}`, (_req, res) => {
-  res.json({
-    data: "It Works!",
-  });
+  res
+    .json({
+      data: "It Works!",
+    })
+    .end();
 });
 
 app.use(`/api/v${API_VERSION}/books`, bookRoutes);
-
-app.use(errorHandler);
+// app.use(errorHandler);
 
 export default app;
